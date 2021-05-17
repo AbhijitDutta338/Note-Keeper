@@ -1,4 +1,5 @@
 import React from "react";
+import DeleteSweepIcon from '@material-ui/icons/DeleteSweep';
 
 function Note(props) {
   return (
@@ -8,10 +9,7 @@ function Note(props) {
       <button
         onClick={() => {
           props.onDelete(props.id);
-        }}
-      >
-        DELETE
-      </button>
+        }}><DeleteSweepIcon /></button>
     </div>
   );
 }
